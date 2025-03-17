@@ -119,7 +119,7 @@ class LineChart(MatplotlibViz):
         self.set_axis_styling(ax, bordercolor="black", fontcolor="black")
 
         # Set title and labels for x and y axis
-        ax.set_title('Event Counts', fontsize=20)
+        ax.set_title(f'{model.name} Performance', fontsize=20)
         ax.set_xlabel('Event Date')
         ax.set_ylabel('Total Event Counts')
 

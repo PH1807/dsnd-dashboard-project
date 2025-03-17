@@ -35,9 +35,6 @@ class QueryBase(QueryMixin):
         # of id columns used for joining
         # order by the event_date column
 
-        # employee_id_column = "employee_id"
-        # team_id_column = "team_id"
-
         query = f"""
                     SELECT
                         event_date
@@ -65,8 +62,6 @@ class QueryBase(QueryMixin):
         # so the query returns the notes
         # for the table name in the `name` class attribute
         notes_table = "notes"
-        employee_id_column = "employee_id"
-        team_id_column = "team_id"
 
         query = f"""
                     SELECT
